@@ -24,10 +24,10 @@ int main()
     string str{ "ab2c3d7R4E6" };
 
     cout << "numeric characters: ";
-    for (int pos = 0; (pos = str.find_first_of(numbers, pos)) != string::npos; ++pos)
+    for (string::size_type pos = 0; (pos = str.find_first_of(numbers, pos)) != string::npos; ++pos)
         cout << str[pos] << " ";
     cout << "\nalphabetic characters: ";
-    for (int pos = 0; (pos = str.find_first_of(alphabet, pos)) != string::npos; ++pos)
+    for (string::size_type pos = 0; (pos = str.find_first_of(alphabet, pos)) != string::npos; ++pos)
         cout << str[pos] << " ";
     cout << endl;
 
